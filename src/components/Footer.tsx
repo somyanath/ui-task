@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import type { ContentData } from '../types';
-import XtragleamIcon from './icons/XtragleamIcon';
-import { Button } from './ui/Button';
+import React, { useState } from "react";
+import type { ContentData } from "../types";
+import XtragleamIcon from "./icons/XtragleamIcon";
+import { Button } from "./ui/Button";
 
 interface FooterProps {
-  footer: ContentData['footer'];
+  footer: ContentData["footer"];
 }
 
 export const Footer: React.FC<FooterProps> = ({ footer }) => {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle newsletter signup
-    console.log('Newsletter signup:', email);
-    setEmail('');
+    console.log("Newsletter signup:", email);
+    setEmail("");
   };
 
   return (

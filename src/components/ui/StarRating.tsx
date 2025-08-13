@@ -1,22 +1,22 @@
-import React from 'react';
+import React from "react";
 
 interface StarRatingProps {
   rating: number;
   maxRating?: number;
-  size?: 'sm' | 'md' | 'lg';
+  size?: "sm" | "md" | "lg";
   className?: string;
 }
 
 export const StarRating: React.FC<StarRatingProps> = ({
   rating,
   maxRating = 5,
-  size = 'md',
-  className = '',
+  size = "md",
+  className = "",
 }) => {
   const sizeClasses = {
-    sm: 'w-3 h-3',
-    md: 'w-4 h-4',
-    lg: 'w-5 h-5',
+    sm: "w-3 h-3",
+    md: "w-4 h-4",
+    lg: "w-5 h-5",
   };
 
   return (
@@ -25,7 +25,7 @@ export const StarRating: React.FC<StarRatingProps> = ({
         <svg
           key={index}
           className={`${sizeClasses[size]} ${
-            index < rating ? 'text-orange-400 fill-current' : 'text-gray-300'
+            index < rating ? "text-orange-400 fill-current" : "text-gray-300"
           }`}
           viewBox="0 0 20 20"
           fill="currentColor"

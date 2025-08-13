@@ -2,18 +2,49 @@
   "navigation": {
     "logo": "Xtragleam",
     "primaryNav": [
-      { "label": "Home", "href": "/", "active": true },
-      { "label": "Shop", "href": "/shop" },
-      { "label": "Spa", "href": "/spa" },
-      { "label": "About", "href": "/about" },
-      { "label": "Contact", "href": "/contact" }
+      {
+        "label": "Home",
+        "href": "/",
+        "active": true
+      },
+      {
+        "label": "Shop",
+        "href": "/shop"
+      },
+      {
+        "label": "Spa",
+        "href": "/spa"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
+      }
     ],
     "secondaryNav": [
-      { "label": "Women", "href": "/women" },
-      { "label": "Men", "href": "/men" },
-      { "label": "Kiddies", "href": "/kiddies" },
-      { "label": "New", "href": "/new" },
-      { "label": "Popular", "href": "/popular" }
+      {
+        "label": "Women",
+        "href": "/women"
+      },
+      {
+        "label": "Men",
+        "href": "/men"
+      },
+      {
+        "label": "Kiddies",
+        "href": "/kiddies"
+      },
+      {
+        "label": "New",
+        "href": "/new"
+      },
+      {
+        "label": "Popular",
+        "href": "/popular"
+      }
     ]
   },
   "hero": {
@@ -190,20 +221,47 @@
     "quickLinks": {
       "title": "Quick Link",
       "links": [
-        { "label": "Home", "href": "/" },
-        { "label": "Shop", "href": "/shop" },
-        { "label": "Spa", "href": "/spa" },
-        { "label": "About", "href": "/about" },
-        { "label": "Contact Us", "href": "/contact" },
-        { "label": "Career", "href": "/career" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Shop",
+          "href": "/shop"
+        },
+        {
+          "label": "Spa",
+          "href": "/spa"
+        },
+        {
+          "label": "About",
+          "href": "/about"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact"
+        },
+        {
+          "label": "Career",
+          "href": "/career"
+        }
       ]
     },
     "company": {
       "title": "Company",
       "links": [
-        { "label": "Privacy Policy", "href": "/privacy" },
-        { "label": "Terms of Service", "href": "/terms" },
-        { "label": "Legal", "href": "/legal" }
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        },
+        {
+          "label": "Terms of Service",
+          "href": "/terms"
+        },
+        {
+          "label": "Legal",
+          "href": "/legal"
+        }
       ]
     },
     "copyright": "© 2024, Xtragleam Skincare. All Right Reserved"

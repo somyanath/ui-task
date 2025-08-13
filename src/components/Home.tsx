@@ -4,8 +4,8 @@ import { BestSellers } from "./BestSellers";
 import { Testimonials } from "./Testimonials";
 import { PromotionBanner } from "./PromotionBanner";
 import { BlogSection } from "./BlogSection";
-import type { ContentData } from '../types';
-import contentData from '../data/content.json';
+import type { ContentData } from "../types";
+import contentData from "../data/content.json";
 import { useCart } from "../hooks/useCart";
 
 const data = contentData as ContentData;
@@ -15,19 +15,21 @@ export const Home: React.FC = () => {
   return (
     <>
       <Hero hero={data.hero} />
-      
+
       <WhyChoose whyChoose={data.whyChoose} />
-      
-      <BestSellers bestSellers={data.bestSellers}
-          cartItems={cartItems}
-          onAddToCart={addToCart}
-          onUpdateQuantity={updateQuantity}
-          onRemoveFromCart={removeFromCart} />
-      
+
+      <BestSellers
+        bestSellers={data.bestSellers}
+        cartItems={cartItems}
+        onAddToCart={addToCart}
+        onUpdateQuantity={updateQuantity}
+        onRemoveFromCart={removeFromCart}
+      />
+
       <Testimonials testimonials={data.testimonials} />
-      
+
       <PromotionBanner promotion={data.promotion} />
-      
+
       <BlogSection blog={data.blog} />
     </>
   );

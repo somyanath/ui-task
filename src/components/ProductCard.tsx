@@ -1,9 +1,9 @@
-import React from 'react';
-import type { Product, CartItem } from '../types';
-import { StarRating } from './ui/StarRating';
-import { Button } from './ui/Button';
-import { HeartIcon } from './icons/HeartIcon';
-import { CartIcon } from './icons/CartIcon';
+import React from "react";
+import type { Product, CartItem } from "../types";
+import { StarRating } from "./ui/StarRating";
+import { Button } from "./ui/Button";
+import { HeartIcon } from "./icons/HeartIcon";
+import { CartIcon } from "./icons/CartIcon";
 
 interface ProductCardProps {
   product: Product;
@@ -49,20 +49,18 @@ export const ProductCard: React.FC<ProductCardProps> = ({
       {/* Product Info */}
       <div className="flex flex-row justify-between space-y-3 bg-white p-4 lg:p-6">
         <div>
-        <h3 className="text-sm lg:text-base font-light text-black">
-          {product.name}
-        </h3>
-        
-        
-        
-        <div className="flex items-center gap-2">
-          <span className="text-sm text-gray-500 line-through">
-            {formatPrice(product.originalPrice)}
-          </span>
-          <span className="text-sm font-medium text-black">
-            {formatPrice(product.discountedPrice)}
-          </span>
-        </div>
+          <h3 className="text-sm lg:text-base font-light text-black">
+            {product.name}
+          </h3>
+
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-gray-500 line-through">
+              {formatPrice(product.originalPrice)}
+            </span>
+            <span className="text-sm font-medium text-black">
+              {formatPrice(product.discountedPrice)}
+            </span>
+          </div>
         </div>
 
         {/* Add to Cart / Quantity Controls */}
@@ -82,7 +80,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               <div className="flex items-center gap-2">
                 <button
                   className="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center text-sm font-medium transition-colors"
-                  onClick={() => onUpdateQuantity(product.id, cartItem.quantity - 1)}
+                  onClick={() =>
+                    onUpdateQuantity(product.id, cartItem.quantity - 1)
+                  }
                 >
                   −
                 </button>
@@ -91,7 +91,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                 </span>
                 <button
                   className="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center text-sm font-medium transition-colors"
-                  onClick={() => onUpdateQuantity(product.id, cartItem.quantity + 1)}
+                  onClick={() =>
+                    onUpdateQuantity(product.id, cartItem.quantity + 1)
+                  }
                 >
                   +
                 </button>
