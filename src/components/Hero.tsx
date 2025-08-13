@@ -28,7 +28,12 @@ export const Hero: React.FC<HeroProps> = ({ hero }) => {
           {/* Content */}
           <div className="flex-1 text-center sm:text-left lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-black mb-6">
-              <span className="lg:flex items-center block gap-2">Glow Beyond <span className="hidden lg:block"><SendIcon width={48} height={48} color="black" /></span></span>
+              <span className="lg:flex items-center block gap-2">
+                Glow Beyond{" "}
+                <span className="hidden lg:block">
+                  <SendIcon width={48} height={48} color="black" />
+                </span>
+              </span>
               <span className="lg:pl-60">Expectations</span>
             </h1>
             <p className="text-lg lg:text-xl font-light text-black mb-8 max-w-lg mx-auto sm:mx-0 lg:mx-0 leading-relaxed">

@@ -11,17 +11,17 @@ interface WhyChooseProps {
 export const WhyChoose: React.FC<WhyChooseProps> = ({ whyChoose }) => {
   const imageTransform = useResponsiveImage({
     mobile: {
-      transform: 'scale(1.3)',
-      objectPosition: '45% 25%'
+      transform: "scale(1.3)",
+      objectPosition: "45% 25%",
     },
     tablet: {
-      transform: 'scale(1.5)',
-      objectPosition: '45% 30%'
+      transform: "scale(1.5)",
+      objectPosition: "45% 30%",
     },
     desktop: {
-      transform: 'scale(1.75)',
-      objectPosition: '250% -60px'
-    }
+      transform: "scale(1.75)",
+      objectPosition: "250% -60px",
+    },
   });
 
   return (

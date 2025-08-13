@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 interface ImageTransform {
   transform: string;
@@ -19,19 +19,19 @@ interface BreakpointSettings {
  */
 export const useResponsiveImage = (settings: BreakpointSettings) => {
   const [windowWidth, setWindowWidth] = useState<number>(
-    typeof window !== 'undefined' ? window.innerWidth : 1024
+    typeof window !== "undefined" ? window.innerWidth : 1024
   );
 
   useEffect(() => {
     // Set initial width
     setWindowWidth(window.innerWidth);
-    
+
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Calculate image transform based on screen size

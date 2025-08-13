@@ -7,10 +7,9 @@ interface BestSellersProps {
   bestSellers: ContentData["bestSellers"];
 }
 
-export const BestSellers: React.FC<BestSellersProps> = ({
-  bestSellers,
-}) => {
-  const { cartItems, addToCart, updateQuantity, removeFromCart } = useCartContext();
+export const BestSellers: React.FC<BestSellersProps> = ({ bestSellers }) => {
+  const { cartItems, addToCart, updateQuantity, removeFromCart } =
+    useCartContext();
   const getCartItem = (productId: string) => {
     return cartItems.find((item) => item.id === productId);
   };
