@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import type { ContentData } from '../types';
-import { HeartIcon } from '../icons/HeartIcon';
-import { ProfileIcon } from '../icons/ProfileIcon';
-import { XtragleamIcon } from '../icons/XtragleamIcon';
-import { SearchIcon } from '../icons/SearchIcon';
-import { CartIcon } from '../icons/CartIcon';
+import { HeartIcon } from './icons/HeartIcon';
+import { ProfileIcon } from './icons/ProfileIcon';
+import { XtragleamIcon } from './icons/XtragleamIcon';
+import { SearchIcon } from './icons/SearchIcon';
+import { CartIcon } from './icons/CartIcon';
 
 interface HeaderProps {
   navigation: ContentData['navigation'];

@@ -1,7 +1,7 @@
 import React from 'react';
 import type { ContentData } from '../types';
-import { Button } from '../ui/Button';
-import { RightArrowWhite } from '../icons/RightArrowWhite';
+import { Button } from './ui/Button';
+import { RightArrowWhite } from './icons/RightArrowWhite';
 import heroProductImage from '../assets/hero-product.png';
 
 interface HeroProps {
