@@ -70,6 +70,8 @@ export interface ContentData {
     ctaLink: string;
     discountCode: string;
     discountPercentage: number;
+    startDate: string;
+    endDate: string;
   };
   blog: {
     title: string;

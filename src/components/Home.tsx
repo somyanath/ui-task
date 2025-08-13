@@ -26,7 +26,7 @@ export const Home: React.FC = () => {
       
       <Testimonials testimonials={data.testimonials} />
       
-      <PromotionBanner />
+      <PromotionBanner promotion={data.promotion} />
       
       <BlogSection />
     </>
