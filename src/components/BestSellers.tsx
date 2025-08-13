@@ -1,22 +1,16 @@
 import React from "react";
-import type { ContentData, Product, CartItem } from "../types";
+import type { ContentData } from "../types";
 import { ProductCard } from "./ProductCard";
+import { useCartContext } from "../context/useCartContext";
 
 interface BestSellersProps {
   bestSellers: ContentData["bestSellers"];
-  cartItems: CartItem[];
-  onAddToCart: (product: Product) => void;
-  onUpdateQuantity: (productId: string, quantity: number) => void;
-  onRemoveFromCart: (productId: string) => void;
 }
 
 export const BestSellers: React.FC<BestSellersProps> = ({
   bestSellers,
-  cartItems,
-  onAddToCart,
-  onUpdateQuantity,
-  onRemoveFromCart,
 }) => {
+  const { cartItems, addToCart, updateQuantity, removeFromCart } = useCartContext();
   const getCartItem = (productId: string) => {
     return cartItems.find((item) => item.id === productId);
   };
@@ -43,9 +37,9 @@ export const BestSellers: React.FC<BestSellersProps> = ({
             key={product.id}
             product={product}
             cartItem={getCartItem(product.id)}
-            onAddToCart={onAddToCart}
-            onUpdateQuantity={onUpdateQuantity}
-            onRemoveFromCart={onRemoveFromCart}
+            onAddToCart={addToCart}
+            onUpdateQuantity={updateQuantity}
+            onRemoveFromCart={removeFromCart}
           />
         ))}
       </div>

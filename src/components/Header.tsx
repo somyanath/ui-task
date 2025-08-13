@@ -90,12 +90,12 @@ export const Header: React.FC<HeaderProps> = ({ navigation, cartCount }) => {
 
       {/* Secondary Navigation - Desktop */}
       <div className="hidden lg:flex items-center justify-between py-4">
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 font-light">
           {navigation.secondaryNav.map((item) => (
             <Link
               key={item.label}
               to={item.href}
-              className={`text-lg font-light transition-colors ${
+              className={`text-lg font-light transition-colors py-2 px-2 bg-gray-100 rounded-sm ${
                 location.pathname === item.href
                   ? "text-black font-medium"
                   : "text-black hover:text-gray-600"

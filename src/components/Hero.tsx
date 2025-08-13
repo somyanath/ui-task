@@ -3,6 +3,8 @@ import type { ContentData } from "../types";
 import { Button } from "./ui/Button";
 import { RightArrowWhite } from "./icons/RightArrowWhite";
 import heroProductImage from "../assets/hero-product.png";
+import { SendIcon } from "./icons/SendIcon";
+import { XtragleamIcon } from "./icons/XtragleamIcon";
 
 interface HeroProps {
   hero: ContentData["hero"];
@@ -10,23 +12,24 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ hero }) => {
   return (
-    <section className="relative bg-pink-50 overflow-hidden">
-      {/* Background Pattern
-      <div className="absolute inset-0">
-        <img
-          src={hero.backgroundImage}
-          alt="Hero background"
-          className="w-full h-full object-cover opacity-30"
-        />
-      </div> */}
+    <section className="relative bg-pink-50 overflow-hidden rounded-2xl">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 z-0 flex items-end justify-center opacity-10 overflow-hidden">
+        <div className="transform scale-[3.5] pl-10 mb-[-20px] flex flex-row items-center">
+          <XtragleamIcon width={120} height={130} color="#666666" />
+          <span className="text-7xl font-normal text-gray-600 tracking-tight -ml-2">
+            tragleam
+          </span>
+        </div>
+      </div>
 
       <div className="relative">
-        <div className="flex flex-col lg:flex-row items-center justify-between py-12 lg:py-20 gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between py-12 lg:py-20 px-4 lg:px-12 gap-8 lg:gap-12">
           {/* Content */}
           <div className="flex-1 text-center lg:text-left">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-black mb-6 leading-tight">
-              <span className="block">Glow Beyond</span>
-              <span className="block">Expectations</span>
+              <span className="flex items-center gap-2">Glow Beyond <SendIcon width={48} height={48} color="black" /></span>
+              <span className="block sm:pl-12 lg:pl-60">Expectations</span>
             </h1>
             <p className="text-lg lg:text-xl font-light text-black mb-8 max-w-lg mx-auto lg:mx-0 leading-relaxed">
               {hero.subtitle}

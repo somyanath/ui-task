@@ -86,7 +86,7 @@ export const PromotionBanner: React.FC<PromotionBannerProps> = ({
 
   return (
     <section className="py-12 lg:py-20">
-      <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-8 lg:p-12 text-center text-white">
+      <div className="bg-gradient-to-r from-purple-600 to-blue-600 p-8 lg:p-12 text-center text-white">
         <h2 className="text-3xl lg:text-6xl font-bold mb-4 lg:mb-6">
           {promotion.title}
         </h2>

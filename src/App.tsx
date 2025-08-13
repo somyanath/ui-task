@@ -1,12 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./components/Home";
 import { Layout } from "./components/Layout";
+import { useCart } from "./hooks/useCart";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
+  const cartUtils = useCart();
+  
   return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route index element={<Home />} />
+    <CartProvider value={cartUtils}>
+      <Routes>
+        <Route element={<Layout />}>
+                  <Route index element={<Home />} />
         {/* Add more routes as needed */}
         <Route
           path="/shop"
@@ -116,6 +121,7 @@ function App() {
         />
       </Route>
     </Routes>
+    </CartProvider>
   );
 }
 

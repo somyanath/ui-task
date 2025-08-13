@@ -9,18 +9,19 @@ interface WhyChooseProps {
 
 export const WhyChoose: React.FC<WhyChooseProps> = ({ whyChoose }) => {
   return (
-    <section className="py-12 lg:py-20 bg-gray-50">
+    <section className="py-4 sm:py-10 lg:py-12 bg-gray-100 px-4 sm:px-6 lg:px-12 mt-4 lg:mt-16">
       <h2 className="text-3xl lg:text-5xl font-normal text-black mb-8 lg:mb-12 text-center lg:text-left">
         {whyChoose.title}
       </h2>
 
       <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
         {/* Image */}
-        <div className="flex-1">
+        <div className="flex-1 relative overflow-hidden min-h-[400px]">
           <img
             src={whyChoose.content.image}
             alt="Skincare consultation"
-            className="w-full h-64 lg:h-96 object-cover rounded-2xl"
+            className="w-full h-full object-cover scale-[1.75] absolute"
+            style={{ objectPosition: "250% -60px" }}
           />
         </div>
 
@@ -29,13 +30,13 @@ export const WhyChoose: React.FC<WhyChooseProps> = ({ whyChoose }) => {
           <h3 className="text-2xl lg:text-3xl font-normal text-black">
             {whyChoose.content.heading}
           </h3>
-          <p className="text-base lg:text-lg font-light text-black leading-relaxed">
+          <p className="text-base lg:text-lg font-light text-black">
             {whyChoose.content.description}
           </p>
           <Button
             variant="outline"
             size="lg"
-            className="rounded-full text-lg font-light flex items-center gap-3 border-gray-300 hover:border-gray-400"
+            className="rounded-full text-lg font-light flex items-center gap-3 bg-white hover:border-gray-400"
             onClick={() => (window.location.href = whyChoose.content.ctaLink)}
           >
             {whyChoose.content.ctaText}
