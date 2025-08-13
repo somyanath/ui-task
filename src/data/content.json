@@ -1,0 +1,201 @@
+{
+  "navigation": {
+    "logo": "Xtragleam",
+    "primaryNav": [
+      { "label": "Home", "href": "/", "active": true },
+      { "label": "Shop", "href": "/shop" },
+      { "label": "Spa", "href": "/spa" },
+      { "label": "About", "href": "/about" },
+      { "label": "Contact", "href": "/contact" }
+    ],
+    "secondaryNav": [
+      { "label": "Women", "href": "/women" },
+      { "label": "Men", "href": "/men" },
+      { "label": "Kiddies", "href": "/kiddies" },
+      { "label": "New", "href": "/new" },
+      { "label": "Popular", "href": "/popular" }
+    ]
+  },
+  "hero": {
+    "title": "Glow Beyond Expectations",
+    "subtitle": "Clean, effective, and cruelty-free skincare made to deliver visible results.",
+    "ctaText": "Shop Now",
+    "ctaLink": "/shop",
+    "backgroundImage": "/images/hero-background.svg"
+  },
+  "whyChoose": {
+    "title": "Why Choose Xtragleam?",
+    "content": {
+      "heading": "Struggling with acne issues?",
+      "description": "At Xtragleam Skincare, we understand how frustrating acne can be, and we're here to help you regain confidence in your skin. Our carefully designed recovery process targets acne at its root while soothing and nourishing your skin for long-term health.",
+      "ctaText": "Explore Our Range",
+      "ctaLink": "/products",
+      "image": "/images/acne-issues.png"
+    }
+  },
+  "bestSellers": {
+    "title": "Discover Our Best-Sellers",
+    "viewAllText": "View all",
+    "viewAllLink": "/products",
+    "products": [
+      {
+        "id": "x5-extreme-body-lotion",
+        "name": "X5 Extreme Body Lotion",
+        "image": "/images/products/x5-extreme-body-lotion.png",
+        "originalPrice": 35000,
+        "discountedPrice": 30000,
+        "currency": "₦",
+        "rating": 5,
+        "badge": "Best Seller",
+        "category": "body-care"
+      },
+      {
+        "id": "aha-face-toner",
+        "name": "AHA Face Toner",
+        "image": "/images/products/aha-face-toner.png",
+        "originalPrice": 75000,
+        "discountedPrice": 60000,
+        "currency": "₦",
+        "rating": 5,
+        "badge": "Refined",
+        "category": "face-care"
+      },
+      {
+        "id": "anti-stretchmark-oil",
+        "name": "Anti Stretchmark Oil",
+        "image": "/images/products/anti-stretchmark-oil.png",
+        "originalPrice": 75000,
+        "discountedPrice": 70000,
+        "currency": "₦",
+        "rating": 5,
+        "badge": "Top",
+        "category": "body-care"
+      },
+      {
+        "id": "acne-serum",
+        "name": "Acne Serum",
+        "image": "/images/products/acne-serum.png",
+        "originalPrice": 35000,
+        "discountedPrice": 30000,
+        "currency": "₦",
+        "rating": 5,
+        "badge": "Best Seller",
+        "category": "face-care"
+      },
+      {
+        "id": "luminous-body-lotion",
+        "name": "Luminous Body Lotion",
+        "image": "/images/products/luminous-body-lotion.png",
+        "originalPrice": 35000,
+        "discountedPrice": 30000,
+        "currency": "₦",
+        "rating": 5,
+        "badge": "Best Seller",
+        "category": "body-care"
+      },
+      {
+        "id": "skin-glow-moisturizing-lotion",
+        "name": "Skin Glow Moisturizing Lotion",
+        "image": "/images/products/skin-glow-moisturizing-lotion.png",
+        "originalPrice": 35000,
+        "discountedPrice": 30000,
+        "currency": "₦",
+        "rating": 5,
+        "badge": "Best Seller",
+        "category": "face-care"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonial",
+    "reviews": [
+      {
+        "id": "lisa-review",
+        "name": "Lisa",
+        "title": "2 weeks of using Glow Serum",
+        "content": "After 2 weeks of using Xtragleam, my skin has never felt smoother. Thank you!",
+        "designation": "Verified Buyer",
+        "avatar": "/images/testimonials/lisa-avatar.png"
+      },
+      {
+        "id": "dr-jane-review",
+        "name": "Dr. Jane O.",
+        "title": "Dermatologist Recommendation",
+        "content": "As a dermatologist, I recommend Xtragleam to my clients for its effective, natural ingredients.",
+        "designation": "Dermatologist",
+        "avatar": "/images/testimonials/dr-jane-avatar.jpg"
+      },
+      {
+        "id": "skincareguru-review",
+        "name": "SkincareGuru",
+        "title": "Beauty Influencer",
+        "content": "Xtragleam is my go-to for glowing skin before events!",
+        "designation": "Beauty Influencer",
+        "avatar": "/images/testimonials/skincareguru-avatar.jpg"
+      },
+      {
+        "id": "emma-review",
+        "name": "Emma L.",
+        "title": "Game Changer",
+        "content": "The Glow Serum is a game-changer. My dark spots faded within weeks, and my skin feels so hydrated!",
+        "designation": "Verified Buyer",
+        "avatar": "/images/testimonials/emma-avatar.jpg"
+      },
+      {
+        "id": "sarah-review",
+        "name": "Sarah A.",
+        "title": "More Confident",
+        "content": "I've struggled with acne for years, but Xtragleam changed everything! My skin is glowing, and I've never felt more confident.",
+        "designation": "Verified Buyer",
+        "avatar": "/images/testimonials/sarah-avatar.jpg"
+      }
+    ]
+  },
+  "promotion": {
+    "title": "Don't Miss Out: Limited-Time Offer!",
+    "subtitle": "Enjoy 20% Off Your First Purchase With Code GLOW20",
+    "urgencyText": "Hurry, Offer Ends In 12hrs 30mins 56seconds",
+    "ctaText": "Shop the Sale",
+    "ctaLink": "/sale",
+    "discountCode": "GLOW20",
+    "discountPercentage": 20
+  },
+  "blog": {
+    "title": "Your Guide to Radiant Skin",
+    "featured": {
+      "title": "5 Mistakes That Might Be Hurting Your Skin",
+      "excerpt": "Your skincare routine plays a crucial role in maintaining healthy, radiant skin. However, some common habits might be doing more harm than good. Here are five mistakes to avoid:\n1. Overwashing Your Face\nWashing too often or using harsh cleansers can strip......Continue Reading",
+      "ctaText": "Read More Blog Post",
+      "ctaLink": "/blog/5-mistakes-hurting-your-skin",
+      "image": "/images/blog-radiant-skin.png"
+    }
+  },
+  "footer": {
+    "logo": "Xtragleam",
+    "newsletter": {
+      "title": "Be the first to get notification about our upcoming event",
+      "placeholder": "Email",
+      "buttonText": "Submit"
+    },
+    "quickLinks": {
+      "title": "Quick Link",
+      "links": [
+        { "label": "Home", "href": "/" },
+        { "label": "Shop", "href": "/shop" },
+        { "label": "Spa", "href": "/spa" },
+        { "label": "About", "href": "/about" },
+        { "label": "Contact Us", "href": "/contact" },
+        { "label": "Career", "href": "/career" }
+      ]
+    },
+    "company": {
+      "title": "Company",
+      "links": [
+        { "label": "Privacy Policy", "href": "/privacy" },
+        { "label": "Terms of Service", "href": "/terms" },
+        { "label": "Legal", "href": "/legal" }
+      ]
+    },
+    "copyright": "©2024, Piccadelly Genius School. All Right Reserved"
+  }
+}
