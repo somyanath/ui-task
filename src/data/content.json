@@ -110,7 +110,7 @@
     "title": "Testimonial",
     "reviews": [
       {
-        "id": "lisa-review",
+        "id": "1-lisa-review",
         "name": "Lisa",
         "title": "2 weeks of using Glow Serum",
         "content": "After 2 weeks of using Xtragleam, my skin has never felt smoother. Thank you!",
@@ -118,36 +118,44 @@
         "avatar": "/images/testimonials/lisa-avatar.png"
       },
       {
-        "id": "dr-jane-review",
-        "name": "Dr. Jane O.",
-        "title": "Dermatologist Recommendation",
-        "content": "As a dermatologist, I recommend Xtragleam to my clients for its effective, natural ingredients.",
-        "designation": "Dermatologist",
-        "avatar": "/images/testimonials/dr-jane-avatar.jpg"
-      },
-      {
-        "id": "skincareguru-review",
-        "name": "SkincareGuru",
-        "title": "Beauty Influencer",
-        "content": "Xtragleam is my go-to for glowing skin before events!",
-        "designation": "Beauty Influencer",
-        "avatar": "/images/testimonials/skincareguru-avatar.jpg"
-      },
-      {
-        "id": "emma-review",
+        "id": "2-emma-review",
         "name": "Emma L.",
         "title": "Game Changer",
         "content": "The Glow Serum is a game-changer. My dark spots faded within weeks, and my skin feels so hydrated!",
         "designation": "Verified Buyer",
-        "avatar": "/images/testimonials/emma-avatar.jpg"
+        "avatar": "/images/testimonials/emma-avatar.png"
       },
       {
-        "id": "sarah-review",
+        "id": "3-sarah-review",
         "name": "Sarah A.",
         "title": "More Confident",
         "content": "I've struggled with acne for years, but Xtragleam changed everything! My skin is glowing, and I've never felt more confident.",
         "designation": "Verified Buyer",
-        "avatar": "/images/testimonials/sarah-avatar.jpg"
+        "avatar": "/images/testimonials/sarah-2.png"
+      },
+      {
+        "id": "4-sarah-review",
+        "name": "Sarah A.",
+        "title": "More Confident",
+        "content": "I've struggled with acne for years, but Xtragleam changed everything! My skin is glowing, and I've never felt more confident.",
+        "designation": "Verified Buyer",
+        "avatar": "/images/testimonials/sarah-avatar.png"
+      },
+      {
+        "id": "5-dr-jane-review",
+        "name": "Dr. Jane O.",
+        "title": "Dermatologist Recommendation",
+        "content": "As a dermatologist, I recommend Xtragleam to my clients for its effective, natural ingredients.",
+        "designation": "Dermatologist",
+        "avatar": "/images/testimonials/dr-jane-avatar.png"
+      },
+      {
+        "id": "6-skincareguru-review",
+        "name": "SkincareGuru",
+        "title": "Beauty Influencer",
+        "content": "Xtragleam is my go-to for glowing skin before events!",
+        "designation": "Beauty Influencer",
+        "avatar": "/images/testimonials/skincareguru-avatar.png"
       }
     ]
   },

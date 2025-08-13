@@ -24,7 +24,7 @@ export const Home: React.FC = () => {
           onUpdateQuantity={updateQuantity}
           onRemoveFromCart={removeFromCart} />
       
-      <Testimonials />
+      <Testimonials testimonials={data.testimonials} />
       
       <PromotionBanner />
       
