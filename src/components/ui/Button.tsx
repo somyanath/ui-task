@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -8,6 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
   disabled?: boolean;
   type?: "button" | "submit" | "reset";
+  to?: string; // New prop for React Router navigation
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -18,6 +20,7 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   disabled = false,
   type = "button",
+  to,
 }) => {
   const baseClasses =
     "inline-flex items-center justify-center font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed";
@@ -36,10 +39,22 @@ export const Button: React.FC<ButtonProps> = ({
     lg: "px-6 py-3 text-lg",
   };
 
+  const classes = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`;
+
+  // If "to" prop is provided, render a Link component from react-router-dom
+  if (to) {
+    return (
+      <Link to={to} className={classes} onClick={onClick}>
+        {children}
+      </Link>
+    );
+  }
+
+  // Otherwise render a regular button
   return (
     <button
       type={type}
-      className={`${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
+      className={classes}
       onClick={onClick}
       disabled={disabled}
     >

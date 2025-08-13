@@ -9,15 +9,15 @@ interface BlogSectionProps {
 
 export const BlogSection: React.FC<BlogSectionProps> = ({ blog }) => {
   return (
-    <section className="bg-gray-100 max-h-[700px]">
-      <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+    <section className="bg-gray-100">
+      <div className="flex flex-col md:flex-row md:h-[600px] max-w-7xl mx-auto">
         {/* Content */}
-        <div className="flex-1 space-y-4 p-8 lg:p-12 overflow-y-auto max-h-[700px]">
+        <div className="w-full md:w-1/2 space-y-4 p-6 sm:p-8 lg:p-12 flex flex-col">
           <h2 className="text-3xl lg:text-5xl font-normal text-black">
             {blog.title}
           </h2>
 
-          <div className="space-y-4">
+          <div className="space-y-4 flex-grow">
             <h3 className="text-xl lg:text-2xl font-normal text-black">
               {blog.featured.title}
             </h3>
@@ -29,20 +29,21 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ blog }) => {
           <Button
             variant="outline"
             size="lg"
-            className="rounded-full text-lg font-light flex items-center gap-3 bg-white border-gray-300 hover:border-gray-400 mt-4"
-            onClick={() => (window.location.href = blog.featured.ctaLink)}
+            className="rounded-full text-lg font-light flex items-center gap-3 bg-white border-gray-300 hover:border-gray-400 mt-4 self-start"
+            to={blog.featured.ctaLink}
           >
             {blog.featured.ctaText}
             <RightArrowWhite width={30} height={30} color="#374151" />
           </Button>
         </div>
 
-        {/* Image */}
-        <div className="flex-1 h-[700px] overflow-hidden">
+        {/* Image Container */}
+        <div className="w-full md:w-1/2 md:h-full px-4 md:px-0">
+          {/* Image with full height on desktop */}
           <img
             src={blog.featured.image}
             alt="Radiant skin guide"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-auto md:h-full object-contain md:object-cover"
           />
         </div>
       </div>

@@ -116,7 +116,7 @@ export const PromotionBanner: React.FC<PromotionBannerProps> = ({
           variant="secondary"
           size="lg"
           className="rounded-full px-8 py-4 text-lg font-medium flex items-center gap-3 mx-auto bg-white text-black hover:bg-gray-100"
-          onClick={() => (window.location.href = promotion.ctaLink)}
+          to={promotion.ctaLink}
           disabled={!timeLeft.isActive}
         >
           {promotion.ctaText}

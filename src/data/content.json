@@ -60,14 +60,14 @@
       "heading": "Struggling with acne issues?",
       "description": "At Xtragleam Skincare, we understand how frustrating acne can be, and we're here to help you regain confidence in your skin. Our carefully designed recovery process targets acne at its root while soothing and nourishing your skin for long-term health.",
       "ctaText": "Explore Our Range",
-      "ctaLink": "/products",
+      "ctaLink": "/shop",
       "image": "/images/acne-issues.png"
     }
   },
   "bestSellers": {
     "title": "Discover Our Best-Sellers",
     "viewAllText": "View all",
-    "viewAllLink": "/products",
+    "viewAllLink": "/shop",
     "products": [
       {
         "id": "x5-extreme-body-lotion",
