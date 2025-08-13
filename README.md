@@ -177,3 +177,136 @@ The project follows a feature-based structure where components are organized by 
 3. **Context API**: Managing global state with React Context
 4. **Responsive Design**: Using Tailwind CSS for responsive layouts
 5. **Client-Side Routing**: Using React Router for SPA navigation
+
+## Content Schema Approach
+
+The project uses a centralized `content.json` file to manage all site content, which offers several advantages:
+
+### Content Schema Design
+
+```mermaid
+classDiagram
+    class ContentData {
+        +navigation: Navigation
+        +hero: HeroSection
+        +whyChoose: WhyChooseSection
+        +bestSellers: BestSellersSection
+        +testimonials: TestimonialsSection
+        +promotion: PromotionSection
+        +blog: BlogSection
+        +footer: FooterSection
+    }
+    
+    class Navigation {
+        +logo: string
+        +primaryNav: NavItem[]
+        +secondaryNav: NavItem[]
+    }
+    
+    class Product {
+        +id: string
+        +name: string
+        +image: string
+        +originalPrice: number
+        +discountedPrice: number
+        +currency: string
+        +rating: number
+        +badge: string
+        +category: string
+    }
+    
+    class Testimonial {
+        +id: string
+        +name: string
+        +title: string
+        +content: string
+        +designation: string
+        +avatar: string
+    }
+    
+    class PromotionSection {
+        +title: string
+        +subtitle: string
+        +urgencyText: string
+        +ctaText: string
+        +ctaLink: string
+        +discountCode: string
+        +discountPercentage: number
+        +startDate: string
+        +endDate: string
+    }
+    
+    ContentData --> Navigation
+    ContentData --> Product
+    ContentData --> Testimonial
+    ContentData --> PromotionSection
+```
+
+### Benefits of the JSON Schema Approach
+
+1. **Content-Code Separation**: Clear separation between content and presentation logic
+2. **Single Source of Truth**: All content is managed in one place
+3. **Easy Maintenance**: Content updates don't require code changes
+4. **Internationalization Ready**: Structure facilitates future multi-language support
+5. **TypeScript Integration**: Content schema is fully typed for type safety
+6. **Scalability**: New sections can be added without changing component structure
+
+### Dynamic Features
+
+- **Promotion Timer**: Uses `startDate` and `endDate` from the schema to calculate and display countdown
+- **Product Information**: Consistent product data structure allows for dynamic rendering
+- **Navigation Links**: Menu structure is fully defined in the schema
+
+## Responsive Design Strategy
+
+The project implements a sophisticated approach to responsive design across all sections:
+
+### Breakpoint System
+
+We use a custom breakpoint system that aligns with Tailwind CSS's responsive prefixes:
+
+- **sm**: 640px and above (small devices)
+- **md**: 768px and above (medium devices)
+- **lg**: 1024px and above (large devices)
+- **xl**: 1280px and above (extra large devices)
+
+### Intermediate Breakpoints Approach
+
+For handling complex responsive behaviors between standard breakpoints, we implemented:
+
+1. **Custom Hook for Responsive Images**: The `useResponsiveImage` hook dynamically adjusts image transformations based on precise viewport width:
+
+```typescript
+const imageTransform = useResponsiveImage({
+  mobile: {
+    transform: "scale(1.3)",
+    objectPosition: "45% 25%",
+  },
+  tablet: {
+    transform: "scale(1.5)",
+    objectPosition: "45% 30%",
+  },
+  desktop: {
+    transform: "scale(1.75)",
+    objectPosition: "250% -60px",
+  },
+});
+```
+
+2. **Section-Specific Responsive Strategies**:
+
+- **Header**: Transitions from mobile menu to desktop navigation at md breakpoint
+- **Hero**: Adjusts image positioning and text alignment at different breakpoints
+- **WhyChoose**: Uses the responsive image hook for complex image transformations
+- **BestSellers**: Adjusts grid columns from 1 to 2 to 3 as viewport increases
+- **Testimonials**: Maintains equal width but dynamic height cards while preserving order
+- **BlogSection**: Switches from stacked to side-by-side layout with full-height image at md breakpoint
+- **PromotionBanner**: Adjusts font sizes and padding for optimal display at all sizes
+
+3. **Layout Transition Points**:
+
+- Content sections transition from stacked to side-by-side at md breakpoint (768px)
+- Typography scales progressively with dedicated text sizes for each breakpoint
+- Padding and spacing increase proportionally with viewport size
+
+This comprehensive approach ensures a consistent, polished user experience across all device sizes while maintaining the visual integrity of complex elements like images and cards.
