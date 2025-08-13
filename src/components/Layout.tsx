@@ -21,7 +21,7 @@ export const Layout: React.FC = () => {
         <Outlet />
       </main>
       
-      <Footer />
+      <Footer footer={data.footer} />
     </div>
   );
 };
