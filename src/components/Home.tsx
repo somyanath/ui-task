@@ -28,7 +28,7 @@ export const Home: React.FC = () => {
       
       <PromotionBanner promotion={data.promotion} />
       
-      <BlogSection />
+      <BlogSection blog={data.blog} />
     </>
   );
 };
