@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
     <>
       <Hero hero={data.hero} />
       
-      <WhyChoose />
+      <WhyChoose whyChoose={data.whyChoose} />
       
       <BestSellers />
       
